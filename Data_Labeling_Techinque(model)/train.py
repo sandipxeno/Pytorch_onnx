@@ -66,7 +66,7 @@ torch.onnx.export(model, dummy_input, r"D:\Prodigal\Pytorch_onnx\models\resnet50
                   input_names=["input"], output_names=["output"],
                   dynamic_axes={"input": {0: "batch_size"}, "output": {0: "batch_size"}})
 
-print("Model saved and converted to ONNX!")
+print("Model saved and converted to ONNX")
 
 
 
