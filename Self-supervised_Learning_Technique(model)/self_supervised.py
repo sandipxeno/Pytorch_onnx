@@ -25,7 +25,7 @@ transform_test = transforms.Compose([
 ])
 
 # **Load Dataset**
-data_dir = "/Users/swedha/Documents/data/PetImages"
+data_dir = "C:\Users\user\Desktop\Pytorch_onnx\Dataset\train"
 dataset = datasets.ImageFolder(root=data_dir, transform=transform_train)
 dataloader = DataLoader(dataset, batch_size=32, shuffle=True)
 
