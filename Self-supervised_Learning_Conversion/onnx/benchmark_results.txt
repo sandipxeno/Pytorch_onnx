@@ -1,0 +1,7 @@
+ONNX Model Benchmark Results
+========================================
+FP32 Model: D:\prodigal-2\Pytorch_onnx\Self-supervised_Learning_Conversion\onnx/cat_dog_classifier.onnx
+Avg Latency per inference: 0.015657 seconds
+
+Quantized INT8 Model: D:\prodigal-2\Pytorch_onnx\Self-supervised_Learning_Conversion\onnx\cat_dog_classifier_quantized.onnx
+Avg Latency per inference: 0.015232 seconds
