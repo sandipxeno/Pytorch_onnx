@@ -22,7 +22,7 @@ model.eval()
 dummy_input = torch.randn(1, 3, 224, 224).to(device)
 
 # Define ONNX save path
-onnx_path = r"C:\Users\user\Desktop\Pytorch_onnx\Data_Labeling_Techinque(model)\model\resnet50_dog_cat.onnx"
+onnx_path = r"C:\Users\user\Desktop\Pytorch_onnx\Data_Labelling_Conversion\onnx\resnet50_dog_cat.onnx"
 
 # Export to ONNX
 torch.onnx.export(model, dummy_input, onnx_path,
