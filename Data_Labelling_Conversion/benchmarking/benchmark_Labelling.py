@@ -3,15 +3,15 @@ import numpy as np
 import onnxruntime as ort
 
 # Define model paths
-fp32_model_path = "D:/prodigal-2/Pytorch_onnx/Data_Labelling_Conversion/onnx/resnet50_dog_cat.onnx"
-int8_model_path = "D:/prodigal-2/Pytorch_onnx/Data_Labelling_Conversion/onnx/resnet50_quantized.onnx"
+fp32_model_path = "C:/Users/user/Desktop/Pytorch_onnx/Data_Labelling_Conversion/onnx/resnet50_dog_cat.onnx"
+int8_model_path = "C:/Users/user/Desktop/Pytorch_onnx/Data_Labelling_Conversion/onnx/resnet50_quantized.onnx"
 
 # Load a sample input tensor (modify shape as per your model)
 input_shape = (1, 3, 224, 224)  # Example for ResNet50
 dummy_input = np.random.randn(*input_shape).astype(np.float32)
 
 # Log file path
-log_file = "D:/prodigal-2/Pytorch_onnx/Data_Labelling_Conversion/onnx/benchmark_results.txt"
+log_file = "C:/Users/user/Desktop/Pytorch_onnx/Data_Labelling_Conversion/onnx/benchmark_results.txt"
 
 def benchmark_model(model_path, input_data):
     """Runs inference and logs performance metrics."""
