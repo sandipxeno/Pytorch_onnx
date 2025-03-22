@@ -12,7 +12,7 @@ model.fc = torch.nn.Linear(2048, 2)  # Modify last layer to match training
 
 # Load model weights and move to CPU
 model.load_state_dict(torch.load(
-    r"C:\Users\user\Desktop\Pytorch_onnx\Data_Labeling_Techinque(model)\model\resnet50_dog_cat.pth", 
+    r"C:/Users/user/Desktop/Pytorch_onnx/Data_Labelling_Techinque(model)/model/resnet50_binary_classification.pth", 
     map_location=device
 ))
 model = model.to(device)
